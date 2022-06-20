@@ -1,7 +1,7 @@
 from ast import If
 
 
-print('==== Desafio 3 ===')
+print('==== Desafio 03 ===')
 #Crie um script python que leia dois numeros e tente mostrar a soma entre elas.
 num1=int(input('Primeiro numero: '))
 num2=int(input('Segundo Numero: '))
