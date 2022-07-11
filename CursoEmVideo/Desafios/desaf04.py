@@ -1,5 +1,5 @@
 print('==== Desafio 04 ===')
-#Crie um programa que leia algo pelo teclado e mostre na tela o tipo primitivo e todas as informações posiveis sobre ela.
+# Crie um programa que leia algo pelo teclado e mostre na tela o tipo primitivo e todas as informações posiveis sobre ela.
 x = input('Digite algo!!: ')
 print('O tipo primitivo desse valor é ', type(x))
 print('Só têm espaços?', x.isspace())
