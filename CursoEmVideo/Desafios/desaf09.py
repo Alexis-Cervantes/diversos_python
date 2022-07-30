@@ -1,5 +1,5 @@
 print('==== Desafio 09 ===')
-# Faça um programa que leia um numero inteiro qualquer e mostre na tela a sua tabuada.
+'''Faça um programa que leia um numero inteiro qualquer e mostre na tela a sua tabuada.'''
 n = int(input('Digite um numero: '))
 print('='*12)
 print('Tabuada do',n,':')
