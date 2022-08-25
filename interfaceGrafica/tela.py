@@ -46,6 +46,6 @@ class PantallaPython:
             print(f'Acepta Tarjetas: {acepta_tarjeta}')
             print(f'No acepta Tarjetas: {no_acepta_tarjeta}')
             print(f'Velocidad Scrip: {velocidad_scrip}')
-# instanciando objetos y Llamando los metodos
+# instanciando objetos y Llamando el metodo o funcion Iniciar
 pantalla = PantallaPython()
 pantalla.Iniciar()
