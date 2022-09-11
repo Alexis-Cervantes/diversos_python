@@ -1,51 +1,57 @@
+from tkinter import ttk
 from usuarios import Usuarios
 from tkinter import *
 
 class Aplicacion:
 
-    def __init__(self, master = None):
+    def __init__(self, maestro = None):
+        # estilo = ttk.Style() # Creando una instancia de la clase ttk.style
+        # estilo.theme_names() # Verificamos los temas disponibles para escoger
+        # tema_actual = estilo.theme_use # Variable que recive el Tema actual
+        # print(estilo.theme_names())
+        # print(tema_actual)
         self.fuente1 = ('verdana', '8')
 
-        self.cont1 = Frame(master)
+        self.cont1 = Frame(maestro)
         self.cont1['pady'] = 10
         self.cont1.pack()
 
-        self.cont2 = Frame(master)
+        self.cont2 = Frame(maestro)
         self.cont2['padx'] = 20
         self.cont2['pady'] = 5
         self.cont2.pack()
 
-        self.cont3 = Frame(master)
+        self.cont3 = Frame(maestro)
         self.cont3['padx'] = 20
         self.cont3['pady'] = 5
         self.cont3.pack()
 
-        self.cont4 = Frame(master)
+        self.cont4 = Frame(maestro)
         self.cont4['padx'] = 20
         self.cont4['pady'] = 5
         self.cont4.pack()
 
-        self.cont5 = Frame(master)
+        self.cont5 = Frame(maestro)
         self.cont5['padx'] = 20
         self.cont5['pady'] = 5
         self.cont5.pack()
 
-        self.cont6 = Frame(master)
+        self.cont6 = Frame(maestro)
         self.cont6['padx'] = 20
         self.cont6['pady'] = 5
         self.cont6.pack()
 
-        self.cont7 = Frame(master)
+        self.cont7 = Frame(maestro)
         self.cont7['padx'] = 20
         self.cont7['pady'] = 5
         self.cont7.pack()
 
-        self.cont8 = Frame(master)
+        self.cont8 = Frame(maestro)
         self.cont8['padx'] = 20
         self.cont8['pady'] = 10
         self.cont8.pack()
         
-        self.cont9 = Frame(master)
+        self.cont9 = Frame(maestro)
         self.cont9['pady'] = 15
         self.cont9.pack()
 

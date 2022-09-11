@@ -2,7 +2,7 @@ from email.policy import default
 from PySimpleGUI import PySimpleGUI as sg
 
 class PantallaPython:
-    # Criando el Metodo construtor
+    # Criando el Metodo Construtor
     def __init__ (self):
         # sg.theme_previewer() --- para previsualizar los temas disponibles
         # theme_name_list = sg.theme_list() --- para obter lista de temas
@@ -10,8 +10,8 @@ class PantallaPython:
         sg.theme('Dark Blue 16')
         # Contrução do Layot
         estructura = [
-            [sg.Text('Nombre:', size=(6,0)), sg.Input(size=(15,0), key='nombre')],
-            [sg.Text('Edad:', size=(6,0)), sg.Input(size=(15,0), key='edad')],
+            [sg.Text('Nombre:', size=(6,0)), sg.Input(size=(15,0), key='name')],
+            [sg.Text('Edad:', size=(6,0)), sg.Input(size=(15,0), key='age')],
             [sg.Text('¿Cuál proveedores de e-mail son aceptados?')],
             [sg.Checkbox('Gmail', key='gmail'), sg.Checkbox('Outlook', key='outlook'), sg.Checkbox('Yahoo', key='yahoo')],
             [sg.Text('Acepta Cartão:')],
@@ -30,8 +30,8 @@ class PantallaPython:
         while True:
             # Extração dos dados
             self.button, self.values = self.ventana.Read()
-            nombre = self.values['nombre']
-            edad = self.values['edad']
+            nombre = self.values['name']
+            edad = self.values['age']
             acepta_gmail = self.values['gmail']
             acepta_outlook = self.values['outlook']
             acepta_yahoo = self.values['yahoo']

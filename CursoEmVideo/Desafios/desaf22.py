@@ -1,6 +1,5 @@
 from gettext import find
 
-
 print('==== Desafio 22====')
 '''Crie um programa que leia o nome completo de uma pessoa e mostre: 
 1) O nome com todas as letras MAISCULAS...OK
@@ -8,7 +7,7 @@ print('==== Desafio 22====')
 3) Quantas letras ao todo (sem considerar espaços)
 4) Quantas letras tem o primeiro nome'''
 nome = str(input('Digite seu nome: ')).strip()
-print(f'Seu nome completo em "MAUISCULO" é: {nome.upper()}')
-print(f'Seu nome completo em minusculo é: {nome.lower()}')
-print('Seu nome têm {}: '.format(len(nome) - nome.count(' ')), 'letras. Sem contar espaçoes')
-print(f'O primeiro nome têm {nome.find(' ')}')
+print(f'Su nombre completo en "MAIUSCULO" é: {nome.upper()}')
+print(f'Su nombre completo en minusculo é: {nome.lower()}')
+print(f'Su nombre têm: {len(nome) - nome.count(" ")} letras sin contar con lo espacios en blanco')
+print(f'El primer nombre tiene: {nome.find(" ")}')
