@@ -1,3 +1,5 @@
+'''EN CONSTRUCCION'''
+
 '''Aqui vamos a cosntruir um programa que solcite a um usuario una lista de compras. O programa mostra lista de items'''
 print('='*10, '"Mercadinho Todo dia"', '='*10)
 print('Menu\n1) Lista\n2) Salir')
