@@ -1,2 +1,2 @@
-# Python
- Gateadas en esta lenguage INTERENSANTISIMA
+# Este é uma pasta contendo varios scripts la linguagem pyrthon 
+ Gateadas en esta lenguage INTERENSANTISIMA!!!!
