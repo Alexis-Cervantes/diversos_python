@@ -1,4 +1,3 @@
-from cProfile import label
 from tkinter import *
 '''Interface basica - Recibiendo datos del usuario - Usando biblioteca tkinter - fuente: "https://www.devmedia.com.br/tkinter-interfaces-graficas-em-python/33956"'''
 class Aplicacion:

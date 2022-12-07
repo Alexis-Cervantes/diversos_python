@@ -1,0 +1,18 @@
+X = "X"
+O = "O"
+VAZIO = " "
+
+tabuleiro = [X, O, X,
+             O, X, O,
+             O, VAZIO, X]
+# Este 'for' serve para iterar a lista "tabuleiro":
+# for casa in tabuleiro:
+#     print(casa)
+
+# Este 'for' junto com "range" serve para iterar a lista 'tabuleiro' de uma forma mais rapida e eficiente:
+# for i in range(len(0, 9)):
+# for i in range(len(9)):
+# for i in range(len(tabuleiro)):
+#     print(tabuleiro[i])
+
+
