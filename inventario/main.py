@@ -37,7 +37,7 @@ frameBaixo.grid(row=2, column=0, pady=0, padx=1, sticky=NSEW)
 
 # Trabalhando no frame Cima ------
 # ABRIENDO IMAGEM
-app_img = Image.open('inventario/Logo_inventario.png')
+app_img = Image.open('inventario/inventario.png')
 app_img = app_img.resize((45, 45))
 app_img = ImageTk.PhotoImage(app_img)
 
@@ -80,13 +80,20 @@ l_numero_serie.place(x=10, y=190)
 e_numero_serie = Entry(frameMedio, width=30, justify='left', relief=SOLID)
 e_numero_serie.place(x=130, y=191)
 
+# Criando botones
+# Botão carregar
 l_img = Label(frameMedio, text='Imagem do item', height=1, anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
 l_img.place(x=10, y=220)
 b_img = Button(frameMedio,width=30, text='Carregar'.upper(), compound=CENTER, anchor=CENTER, overrelief=RIDGE, font=('Ivy 8'), bg=co1, fg=co0)
 b_img.place(x=130, y=221)
 
+# botão inserir
+img_add = Image.open('inventario/add.png')
+img_add = img_add.resize((20,20))
+img_add = ImageTk.PhotoImage(img_add)
 
-
+b_inserir = Button(frameMedio, image=img_add, width=95, text='  Adiconar'.upper(), compound=LEFT, anchor=NW, overrelief=RIDGE, font=('Ivy 8'), bg=co1, fg=co0)
+b_inserir.place(x=330, y=10)
 
 
 janela.mainloop()
