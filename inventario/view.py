@@ -4,8 +4,6 @@ import sqlite3 as lite
 con = lite.connect('dados.bd')
 
 # ---------------- INSERIR DADOS EM TABELA-------------------------- 
-#Criar lista com itens. Comente este codigo (Inserir dados) quando vai consultar dados na tabela. cada vez que rodamos este trecho se cria mais linhas na tabla
-#dados = ['vaso', 'sala de estar', 'vaso que comprei no mercado ao lado', 'marca x', '27/08/2022','100', 'xxxxxx', 'c:imagem']
 def inserir_form(i):
     with con:
         # Instanciamos a variavel 'con' fazendo o curso Apontar para o banco criado.
@@ -14,7 +12,6 @@ def inserir_form(i):
         cur.execute(query, i)
 
 # -----------------ATUALIZAR DADOS EM TABELA:------------------------
-# atualizar_dados = ['cadeira', 'cozinha', 'cadeira que comprei em 1997', 'marca y', '26/06/1974','500', 'yyyyyy', 'c:imagens', 1]
 def atualizar_(i):
     with con:
         # Instanciamos a variavel 'con' fazendo o curso Apontar para o banco criado.
@@ -59,3 +56,5 @@ def ver_item(id):
         rows = cur.fetchall()
         for row in rows:
             ver_dados_individual.append(row)
+            
+    return ver_dados_individual
