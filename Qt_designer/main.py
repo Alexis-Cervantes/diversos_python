@@ -1,4 +1,4 @@
-import sys
+import sys                                                                  # fonte: Eletronica e programação - Yputube - Curso de Pyqt5
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QToolTip
 
 class Ventana(QMainWindow):
