@@ -1,3 +1,4 @@
+""" Criando uma pequena aplicação com Banco de dados - https://www.devmedia.com.br/tkinter-interfaces-graficas-em-python/33956 """
 from tkinter import *
 from tkinter import Tk, StringVar, ttk
 from tkinter import messagebox
