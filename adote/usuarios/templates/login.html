@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cadastro</title>
+        <title>Login</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="{% static 'usuarios/css/cadastro.css' %}" rel="stylesheet">
     </head>
@@ -17,43 +17,29 @@
                         <img src="{% static 'usuarios/img/logo_adote.png' %}" width="9%"><span class="font-logo">ADO.TE</span>
                     </div>
 
-                    <div class="body-form"> 
-                         <!--Aqui começa codigo django para mensagens de alerta-->
+                    <div class="body-form">
                         {% if messages %}
-                            <br> 
-                            {% for message in messages %} 
-                                <div class="alert {{message.tags}}"> 
+                            <br>
+                            {% for message in messages %}
+                                <div class="alert {{message.tags}}">
                                     {{message}}
                                 </div>
                             {% endfor %}
-                        {% endif %} 
-                        <!--Aqui acaba codigo django para mensagens de alerta-->
-                        <h2>Cadastre-se</h2>
-                        <p>Seu cadastro salva vidas.</p>
+                        {% endif %}
+                        <h2>Logar</h2>
+                        <p>Que bom ter você de volta.</p>
                         <hr>
-                        <form action="{% url 'cadastro' %}" method="POST">{% csrf_token %}
+                        <form action="{% url 'login' %}" method="POST">{% csrf_token %}
                             <span>Nome:</span>
                             <input type="text" class="form-control" placeholder="Digite seu nome..." name="nome">
                             <br>
-                            <span>E-mail:</span>
-                            <input type="email" class="form-control" placeholder="Digite seu email..." name="email">
-                            <br>
-                            <div class="row">
-
-                                <div class="col-md">
-                                    <span>Senha:</span>
-                                    <input type="password" class="form-control" placeholder="Digite sua senha..." name="senha">
-                                </div>
-
-                                <div class="col-md">
-                                    <span>Confirmar senha:</span>
-                                    <input type="password" class="form-control" placeholder="Digite sua senha..." name="confirmar_senha">
-                                </div>
-                            </div>
-
+                           
+                            <span>Senha:</span>
+                            <input type="password" class="form-control" placeholder="Digite sua senha..." name="senha">
+                                
                             <input type="submit" value="SALVAR" class="btn-custom-primary">
                         
-                            <a href="" class="link-float">Já tenho uma conta</a>
+                            <a href="" class="link-float">Cadastre-se</a>
                         </form>
                     </div>
                 </div>
@@ -65,11 +51,8 @@
                         <p>Nos ajude a salvar vidas.</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-    
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
